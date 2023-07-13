@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="carousel w-full">
       <div id="slide1" className="carousel-item relative w-full h-[600px]">
         <img src={img1} className="w-full rounded-xl" />
-        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
           <div className="space-y-7">
             <h2 className="text-6xl font-semibold">
               Affordable <br /> Price For Car <br /> Servicing
@@ -38,7 +38,7 @@ const Banner = () => {
       </div>
       <div id="slide2" className="carousel-item relative w-full h-[600px]">
         <img src={img2} className="w-full" />
-        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
           <div className="space-y-7">
             <h2 className="text-6xl font-semibold">
               Affordable <br /> Price For Car <br /> Servicing
@@ -68,7 +68,7 @@ const Banner = () => {
       </div>
       <div id="slide3" className="carousel-item relative w-full h-[600px]">
         <img src={img3} className="w-full" />
-        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
           <div className="space-y-7">
             <h2 className="text-6xl font-semibold">
               Affordable <br /> Price For Car <br /> Servicing
@@ -98,7 +98,7 @@ const Banner = () => {
       </div>
       <div id="slide4" className="carousel-item relative w-full h-[600px]">
         <img src={img4} className="w-full" />
-        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+        <div className="absolute flex  gap-10 h-full items-center pl-12 bottom-0 text-white bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)] rounded-xl">
           <div className="space-y-7">
             <h2 className="text-6xl font-semibold">
               Affordable <br /> Price For Car <br /> Servicing
