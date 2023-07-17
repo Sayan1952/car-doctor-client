@@ -1,7 +1,7 @@
 import img from "../../assets/images/login/login.svg";
 
-const Login = () => {
-  const handleLogin = (event) => {
+const Registration = () => {
+  const handleRegistration = (event) => {
     event.preventDefault();
   };
 
@@ -13,24 +13,36 @@ const Login = () => {
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
-            <h1 className="text-4xl font-semibold text-center p-10">Login</h1>
-            <form onSubmit={handleLogin}>
+            <h1 className="text-4xl font-semibold text-center p-10">
+              Registration
+            </h1>
+            <form onSubmit={handleRegistration}>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text">Name</span>
                 </label>
                 <input
                   type="text"
-                  placeholder="email"
+                  placeholder="Name"
                   className="input input-bordered"
                 />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="text"
+                  type="email"
+                  placeholder="Email"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Confirm Password</span>
+                </label>
+                <input
+                  type="password"
                   placeholder="password"
                   className="input input-bordered"
                 />
@@ -81,4 +93,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Registration;
