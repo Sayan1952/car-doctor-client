@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img from "../../assets/images/login/login.svg";
 
 const Login = () => {
@@ -48,6 +49,14 @@ const Login = () => {
                 />
               </div>
             </form>
+            <div>
+              <p>
+                New Here?{" "}
+                <Link to="/registration" className="font-semibold">
+                  Register Now!
+                </Link>{" "}
+              </p>
+            </div>
             <div className="flex items-center mt-4">
               <div className="w-1/3">
                 {/* Your first sign up icon */}
