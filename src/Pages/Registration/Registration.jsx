@@ -1,9 +1,25 @@
 import { Link } from "react-router-dom";
 import img from "../../assets/images/login/login.svg";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Registration = () => {
+  const { createUser } = useContext(AuthContext);
+
   const handleRegistration = (event) => {
     event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(name, email, password);
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.log(error));
   };
 
   return (
@@ -26,6 +42,7 @@ const Registration = () => {
                   type="text"
                   placeholder="Name"
                   className="input input-bordered"
+                  name="name"
                 />
               </div>
               <div className="form-control">
@@ -36,6 +53,7 @@ const Registration = () => {
                   type="email"
                   placeholder="Email"
                   className="input input-bordered"
+                  name="email"
                 />
               </div>
               <div className="form-control">
@@ -46,6 +64,7 @@ const Registration = () => {
                   type="password"
                   placeholder="password"
                   className="input input-bordered"
+                  name="password"
                 />
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
